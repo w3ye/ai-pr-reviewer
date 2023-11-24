@@ -22,7 +22,7 @@ import {getTokenCount} from './tokenizer'
 const context = github_context
 const repo = context.repo
 
-const ignoreKeyword = '@coderabbitai: ignore'
+const ignoreKeyword = '@guardian: ignore'
 
 export const codeReview = async (
   lightBot: Bot,
