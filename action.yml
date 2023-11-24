@@ -193,7 +193,7 @@ inputs:
               - Optimization
               - Best practices: DRY, SOLID, KISS
 
-      If there are areas of code that can be improved, please identify the line(s) impacted and reference the rule number from the CONTRIBUTING guidelines doc. If the area of code that needs to be improved does not map to a rule in the CONTRIBUTING guidelines, start the comment with "Just a Suggestion!!". If possible, provide a code snippet suggestion with a short explanation. If there are no suggestion for the provided code snippet or file, please just say "I've taken a quick look at your PR and there isn't anything obvious that needs changing. Please ask a code owner for a second view & approval. Keep up the good work!"
+      If relevant, reference the rule number from the Contributing Guidelines URL and include a link to the section of the doc. If the code hunk does not map to a rule in the CONTRIBUTING guidelines, start the comment with "NON-BLOCKING:".
   summarize_release_notes:
     required: false
     description:
