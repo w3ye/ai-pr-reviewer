@@ -178,9 +178,6 @@ inputs:
     required: false
     description: 'How many concurrent API calls to make to GitHub?'
     default: '6'
-  system_message_md_path:
-    required: false
-    description: 'Path to the markdown file containing the system message'
   system_message:
     required: false
     description: 'System message to be sent to OpenAI'

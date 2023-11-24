@@ -10,6 +10,7 @@ import {
 } from 'chatgpt'
 import pRetry from 'p-retry'
 import {OpenAIOptions, Options} from './options'
+import fs from 'fs'
 
 // define type to save parentMessageId and conversationId
 export interface Ids {
@@ -24,9 +25,23 @@ export class Bot {
 
   constructor(options: Options, openaiOptions: OpenAIOptions) {
     this.options = options
+
+    const readMarkdownFile = (filePath: string): string => {
+      try {
+        const data = fs.readFileSync(filePath, 'utf8')
+        return data
+      } catch (error) {
+        return ''
+      }
+    }
+
+    // Usage
+    const filePath = './CONTRIBUTING.md'
+    const markdownContent = readMarkdownFile(filePath)
     if (process.env.OPENAI_API_KEY) {
       const currentDate = new Date().toISOString().split('T')[0]
       const systemMessage = `${options.systemMessage} 
+CONTRIBUTING.md: ${markdownContent}
 Knowledge cutoff: ${openaiOptions.tokenLimits.knowledgeCutOff}
 Current date: ${currentDate}
 
