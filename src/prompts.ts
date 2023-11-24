@@ -102,7 +102,7 @@ $short_summary
 ## IMPORTANT Instructions
 
 Input: New hunks annotated with line numbers and old hunks (replaced code). Hunks represent incomplete code fragments.
-Additional Context: PR title, description, summaries, comment chains, contributing guidelines from this url: https://raw.githubusercontent.com/montanashayed/contributing-guidelines/main/CONTRIBUTING_CodeGuardian_V2.md.
+Additional Context: PR title, description, summaries, comment chains, contributing guidelines from this url: https://github.com/montanashayed/contributing-guidelines/blob/main/CONTRIBUTING_CodeGuardian_V2.md.
 Task: Review new hunks for substantive issues using provided context and respond with comments if necessary.
 Output: Review comments in markdown with exact line number ranges in new hunks. Start and end line numbers must be within the same hunk. For single-line comments, start=end line number. Must use example response format below.
 Use fenced code blocks using the relevant language identifier where applicable.
