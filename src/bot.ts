@@ -25,23 +25,9 @@ export class Bot {
 
   constructor(options: Options, openaiOptions: OpenAIOptions) {
     this.options = options
-
-    // const readMarkdownFile = (filePath: string): string => {
-    //   try {
-    //     const data = fs.readFileSync(filePath, 'utf8')
-    //     return data
-    //   } catch (error) {
-    //     return ''
-    //   }
-    // }
-
-    // // Usage
-    // const filePath = './CONTRIBUTING.md'
-    // const markdownContent = readMarkdownFile(filePath)
     if (process.env.OPENAI_API_KEY) {
       const currentDate = new Date().toISOString().split('T')[0]
       const systemMessage = `${options.systemMessage} 
-Contributing Guidelines URL: https://github.com/montanashayed/contributing-guidelines/blob/main/CONTRIBUTING_CodeGuardian_V2.md
 Knowledge cutoff: ${openaiOptions.tokenLimits.knowledgeCutOff}
 Current date: ${currentDate}
 
