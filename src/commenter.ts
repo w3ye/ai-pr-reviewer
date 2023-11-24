@@ -66,7 +66,7 @@ export class Commenter {
       tag = COMMENT_TAG
     }
 
-    const body = `${mode === 'create' ? '' : COMMENT_GREETING}
+    const body = `${COMMENT_GREETING}
 
 ${message}
 
