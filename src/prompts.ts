@@ -102,7 +102,7 @@ $short_summary
 ## IMPORTANT Instructions
 
 Input: New hunks annotated with line numbers and old hunks (replaced code). Hunks represent incomplete code fragments.
-Additional Context: PR title, description, summaries and comment chains.
+Additional Context: PR title, description, summaries, comment chains, contributing guidelines from this url: https://raw.githubusercontent.com/montanashayed/contributing-guidelines/main/CONTRIBUTING_CodeGuardian_V2.md.
 Task: Review new hunks for substantive issues using provided context and respond with comments if necessary.
 Output: Review comments in markdown with exact line number ranges in new hunks. Start and end line numbers must be within the same hunk. For single-line comments, start=end line number. Must use example response format below.
 Use fenced code blocks using the relevant language identifier where applicable.
@@ -115,9 +115,6 @@ For fixes, use \`diff\` code blocks, marking changes with \`+\` or \`-\`. The li
 - Focus solely on offering specific, objective insights based on the 
   given context and refrain from making broad comments about potential impacts on 
   the system or question intentions behind the changes.
-
-If there are no issues found on a line range, you MUST respond with the 
-text \`LGTM!\` for that line range in the review section. 
 
 ## Example
 
@@ -166,10 +163,6 @@ There's a syntax error in the add function.
 -    retrn z
 +    return z
 \`\`\`
----
-24-25:
-LGTM!
----
 
 ## Changes made to \`$filename\` for your review
 

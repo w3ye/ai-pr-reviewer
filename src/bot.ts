@@ -10,7 +10,6 @@ import {
 } from 'chatgpt'
 import pRetry from 'p-retry'
 import {OpenAIOptions, Options} from './options'
-import fs from 'fs'
 
 // define type to save parentMessageId and conversationId
 export interface Ids {
