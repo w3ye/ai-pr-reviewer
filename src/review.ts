@@ -397,7 +397,7 @@ ${filename}: ${summary}
     if (releaseNotesResponse === '') {
       info('release notes: nothing obtained from openai')
     } else {
-      let message = '### Summary by CodeRabbit\n\n'
+      let message = '### Summary by Guardian\n\n'
       message += releaseNotesResponse
       try {
         await commenter.updateDescription(
@@ -843,7 +843,7 @@ ${review.comment}`
 
   function sanitizeResponse(comment: string): string {
     comment = sanitizeCodeBlock(comment, 'suggestion')
-    comment = sanitizeCodeBlock(comment, 'diff')
+    // comment = sanitizeCodeBlock(comment, 'diff')
     return comment
   }
 
