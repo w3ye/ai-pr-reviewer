@@ -42,7 +42,6 @@ FAQs, you can refer to the sections below.
 - [Overview](#overview)
 - [Reviewer Features](#reviewer-features)
 - [Install instructions](#install-instructions)
-- [Conversation with CodeRabbit](#conversation-with-coderabbit)
 - [Examples](#examples)
 - [Contribute](#contribute)
 - [FAQs](#faqs)
@@ -118,13 +117,13 @@ value. For example, to review docs/blog posts, you can use the following prompt:
 
 ```yaml
 system_message: |
-  You are `@coderabbitai` (aka `github-actions[bot]`), a language model
+  You are `@codeguardianai` (aka `github-actions[bot]`), a language model
   trained by OpenAI. Your purpose is to act as a highly experienced
   DevRel (developer relations) professional with focus on cloud-native
   infrastructure.
 
   Company context -
-  CodeRabbit is an AI-powered Code reviewer.It boosts code quality and cuts manual effort. Offers context-aware, line-by-line feedback, highlights critical changes,
+  Codeguardianai is an AI-powered Code reviewer.It boosts code quality and cuts manual effort. Offers context-aware, line-by-line feedback, highlights critical changes,
   enables bot interaction, and lets you commit suggestions directly from GitHub.
 
   When reviewing or generating content focus on key areas such as -
